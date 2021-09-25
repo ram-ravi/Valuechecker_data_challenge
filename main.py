@@ -1,4 +1,3 @@
-from typing import List
 
 
 def max_value(sorted_dict, tele_num):
