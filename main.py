@@ -1,4 +1,3 @@
-
 def binary_search(list_of_prefix, country_code):
     """
 
@@ -143,7 +142,7 @@ def hash_process(operators_dict, phone_num):
 
     price_list = []
     operator_list = []
-    cheap_operator= []
+    cheap_operator = []
 
     for key, value in operators_dict.items():
         temp_price = hash_converter(value, phone_num)
@@ -164,3 +163,13 @@ def hash_process(operators_dict, phone_num):
     except ValueError:
         print('NO OPERATOR FOUND FOR THIS NUMBER: %i' % phone_num)
         return 'NO OPERATOR FOUND FOR THIS NUMBER: %i' % phone_num
+
+# testing our function
+
+# test_operator_dict = {
+#     'Operator A': {1: 0.9, 268: 5.1, 46: 0.17, 4620: 0.0, 468: 0.15, 4631: 0.15, 4673: 0.9, 46732: 1.1},
+#     'Operator B': {1: 0.92, 44: 0.5, 46: 0.2, 467: 1.1, 48: 1.2}}
+
+# test_tele_num = 46732823704
+
+# process(test_operator_dict, test_tele_num)
